@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5</title>
+</head>
+<body>
+    <h1> 1.What are the  New Tags addsed in HTML 5 </h1>
+
+    <P> .HTML 5  introduced several new tags to enhance the structure and functionlity of web pages. some notable addition include:
+      <p> 1.article == Represents a self-contained piece of content that could be distributed and resused independentily.</p>
+      <p> 2.section == Defines a section in a document, such as chapters, headers footers, or any other thematic grouping of content.</p>
+      <p> 3.Nav == Reoresent a navigation menu or links to other pages or resources.</p>
+      <p> 4. header== Defines a header for a document or a section.</p>
+      <p> 5. Footer== Represents a footer for a document or a section.</p>
+      <p> 6. Aside== Represents content that is tangentially related to the content around it.</p>
+      <p> 7. Figure and Figcaption== Used together to represent any content that is referenced from the main content, such as images, diagrams, charts, ect. </p>
+      <p> 8. Main == Represent the main content of the BODY element in a document.</p>
+      <hr> <hr>
+
+      <h1>2. • How to embed audio and video in a webpage?  </h1>
+      <p> Ans= To embed audio and video in a webpage, you can use HTML5's AUDIO and VIDEO elements. Here's a basic example for both:</p>
+      <p> For Audio: 
+        <audio controls >
+            <source src="your-audio-file.mp3" type="audio/mp3"></audio>
+            <p>Your browser does not support the Audio tag.</p>
+
+ 
+      <p>For Video:
+        <video width="640" height="360" controls>
+            <source src="your-video-file.mp4" type="video/mp4">
+            <p>Your browser does not support the Audio tag.</p>
+        </video>
+      </p>
+      <p>Replace you audio-file.mp3 and you-video-file.mp4 with the actual file path or urls. The controls attribute adds play, pause, and volume controls.</p>
+
+      <hr> <hr>
+
+      <h1> 3 • Semantic element in HTML5? </h1>
+      <p> Ans. Semantic elements in HTML5 are tags that carry meaning about the structure and content of the document, making it more understandable for both browsers and developers. Some examples include <br> header,<br> <br>nav <br>,<br> article <br>, <br>section,<br>footer <br>, and <br> aside <br>. Using these elements appropriately improves the document's accessibility, SEO, and overall structure.</p>
+      <hr> <hr>
+
+    <h1> 4 • Canvas and SVG tags
+    </h1>
+  
+    <p>Ans== Both canvas and svg are HTML elements used for rendering graphics, but they have different approaches.</p>
+          <p>.CANVAS(<canvas>): </p>
+          <p>. Provides a bitmap-based driving surface. </p>
+          <p>. Uses JavaScript to draw shapes, images, and complex graphics.</p>
+          <p>. Well- suited for dynamic and interactive graphics.</p>
+          <p>. Resolution- dependent, so scaling might affect quality.</p>
+          <h3> EXAMPLE..</h3>
+           <canvas id="myCanvas" width="200" height="100"></canvas>
+           <script>
+            var canvas= document.getElementById('myCanvas');
+            var context= canvas.getContext('2d');
+            context.fillstyle= 'blue';
+            context.fillRect(10, 10, 150, 80);
+           </script>
+
+           <h3> .SVG(<svg>) </h3>
+            <p>. Defines graphics in XML format.</p>
+            <p>. Each graphic element is an XML tag.</p>
+            <p>. Retains  crisp quality regardlese of scaling.</p>
+            <p>. Well-suited for staic or less complex graphics.</p>
+            <h4>EXAMPLE</h4>
+            <svg width="200" height="100">
+              <rect width="150" height="80" style="fill:blue;"/></svg>
+
+             <h3> Comparison of Canvas and SVG</h3>
+The table below shows some important differences between Canvas and SVG:
+
+<h4>.Canvas</h4>	
+<p>Resolution dependent</p>
+<p>No support for event handlers</p>
+<p>Poor text rendering capabilities</p>
+<p>You can save the resulting image as .png or .jpg</p>
+<p>Well suited for graphic-intensive games</p>
+
+<h4>.SVG </h4>
+<p>Resolution independent</p>
+<p>Support for event handlers</p>
+<p>Best suited for applications with large rendering areas (Google Maps)</p>
+<p>Slow rendering if complex (anything that uses the DOM a lot will be slow)</p>
+<p>Not suited for game applications</p>
+
+<hr> <hr>
+
+
+</body>
+</html>
